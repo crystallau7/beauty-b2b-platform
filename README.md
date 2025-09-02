@@ -1,2 +1,2 @@
-# beauty-b2b-platform
-韩国转运中心 全球美妆B2B平台
+Complete website with styles
+上传完整的网站文件，包括CSS样式
