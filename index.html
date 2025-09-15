@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Beauty B2B Platform - 韩国转运中心 全球美妆B2B平台</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <div class="logo-symbol">B</div>
+                </div>
+                <span class="logo-text" data-zh="全球美妆供应链" data-en="Global Beauty Supply Chain" data-kr="글로벌 뷰티 공급망">Global Beauty Supply Chain</span>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link" data-zh="首页" data-en="Home" data-kr="홈">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-zh="企业简介" data-en="Company Profile" data-kr="기업 소개">Company Profile</a></li>
+                    <li><a href="#brands" class="nav-link" data-zh="品牌" data-en="Brands" data-kr="브랜드">Brands</a></li>
+                    <li><a href="#korean-hot" class="nav-link" data-zh="韩国爆品" data-en="Korean Hot Products" data-kr="한국 인기 제품">Korean Hot Products</a></li>
+                    <li><a href="#clearance" class="nav-link" data-zh="临期产品" data-en="Clearance Products" data-kr="재고 정리 제품">Clearance Products</a></li>
+                    <li><a href="#supply-chain" class="nav-link" data-zh="供应链" data-en="Supply Chain" data-kr="공급망">Supply Chain</a></li>
+                    <li><a href="#contact" class="nav-link" data-zh="联系我们" data-en="Contact" data-kr="연락처">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="language-switcher">
+                <button class="lang-btn" data-lang="zh">简体中文</button>
+                <span class="separator">|</span>
+                <button class="lang-btn active" data-lang="en">English</button>
+                <span class="separator">|</span>
+                <button class="lang-btn" data-lang="kr">한국어</button>
+            </div>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-left">
+                    <h1 class="hero-title" data-zh="连接全球美妆资源" data-en="Connecting Global Beauty Resources" data-kr="글로벌 뷰티 리소스 연결">Connecting Global Beauty Resources</h1>
+                    <p class="hero-subtitle" data-zh="将韩国、欧洲、日本等地的优质美妆产品通过韩国转运中心引入全球新兴市场" data-en="Introducing premium beauty products from Korea, Europe, and Japan to emerging markets worldwide through our Korean Transit Center" data-kr="한국, 유럽, 일본의 프리미엄 뷰티 제품을 한국 운송 센터를 통해 전 세계 신흥 시장에 도입">Introducing premium beauty products from Korea, Europe, and Japan to emerging markets worldwide through our Korean Transit Center</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" data-zh="了解更多" data-en="Learn More" data-kr="더 알아보기">Learn More</button>
+                        <button class="btn btn-secondary" data-zh="联系我们" data-en="Contact Us" data-kr="연락하기">Contact Us</button>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <div class="hero-image-container">
+                        <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Professional Beauty Model" class="hero-image">
+                        <div class="hero-image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-background"></div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-us">
+        <div class="about-layout">
+            <div class="about-left">
+                <h2 class="about-title" data-zh="企业简介" data-en="Company Profile" data-kr="기업 소개">企业简介</h2>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1542051841857-5f90071e7989?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="韩国首尔现代建筑" class="korean-building" onerror="this.src='https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80'">
+                    <div class="image-overlay">
+                        <div class="overlay-text">
+                            <span class="location-tag" data-zh="韩国总部" data-en="Korea Headquarters" data-kr="한국 본사">韩国总部</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about-text">
+                <div class="text-content">
+                    <p class="about-paragraph" data-zh="扬州左米右米贸易有限公司创立于2018年，是一家外资企业。公司法定代表人为 심상일，总部设立于韩国，并在扬州、香港、深圳设有分部。" data-en="Yangzhou Zuomi Youmi Trading Co., Ltd. was established in 2018 as a foreign-invested enterprise. The company's legal representative is 심상일, with headquarters in Korea and branches in Yangzhou, Hong Kong, and Shenzhen." data-kr="양저우 좌미우미 무역 유한공사는 2018년에 설립된 외자 기업입니다. 회사의 법정 대표자는 심상일이며, 본사는 한국에 있고 양저우, 홍콩, 선전에 지사를 두고 있습니다.">扬州左米右米贸易有限公司创立于2018年，是一家外资企业。公司法定代表人为 심상일，总部设立于韩国，并在扬州、香港、深圳设有分部。</p>
+                    
+                    <p class="about-paragraph" data-zh="公司自成立以来，专注于全球美妆供应链业务，凭借稳健的国际资源整合能力和完善的跨境贸易体系，致力于为合作伙伴提供专业、高效、可信赖的美妆产品供应与服务。" data-en="Since its establishment, the company has focused on global beauty supply chain business, leveraging robust international resource integration capabilities and a comprehensive cross-border trade system to provide professional, efficient, and trustworthy beauty product supply and services to partners." data-kr="회사는 설립 이래 글로벌 뷰티 공급망 사업에 집중하여, 견고한 국제 자원 통합 능력과 완벽한 크로스보더 무역 시스템을 바탕으로 파트너들에게 전문적이고 효율적이며 신뢰할 수 있는 뷰티 제품 공급 및 서비스를 제공하기 위해 노력하고 있습니다.">公司自成立以来，专注于全球美妆供应链业务，凭借稳健的国际资源整合能力和完善的跨境贸易体系，致力于为合作伙伴提供专业、高效、可信赖的美妆产品供应与服务。</p>
+                    
+                    <p class="about-paragraph" data-zh="我们依托韩国总部的品牌直采优势，结合扬州的运营中心、香港的国际贸易枢纽以及深圳的跨境电商环境，建立起覆盖全球的供应链网络。" data-en="We leverage the brand direct sourcing advantages of our Korean headquarters, combined with Yangzhou's operational center, Hong Kong's international trade hub, and Shenzhen's cross-border e-commerce environment, to establish a global supply chain network." data-kr="우리는 한국 본사의 브랜드 직접 조달 우위를 바탕으로 양저우의 운영 센터, 홍콩의 국제 무역 허브, 선전의 크로스보더 전자상거래 환경과 결합하여 전 세계를 아우르는 공급망 네트워크를 구축했습니다.">我们依托韩国总部的品牌直采优势，结合扬州的运营中心、香港的国际贸易枢纽以及深圳的跨境电商环境，建立起覆盖全球的供应链网络。</p>
+                </div>
+                
+                <div class="about-footer">
+                    <p class="company-motto" data-zh="品质至上 · 合作共赢" data-en="Quality First · Win-Win Cooperation" data-kr="품질 최우선 · 상생 협력">品质至上 · 合作共赢</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Matrix Section -->
+    <section id="brands" class="brands">
+        <div class="container">
+            <h2 class="section-title" data-zh="韩国免税店品牌均可合作" data-en="Korean Duty-Free Brands Available for Partnership" data-kr="한국 면세점 브랜드 파트너십 가능">韩国免税店品牌均可合作</h2>
+            <div class="brand-grid">
+                <div class="brand-card">
+                    <div class="brand-logo">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <h3 class="brand-name" data-zh="免税店直供" data-en="Direct from Duty-Free" data-kr="면세점 직공급">免税店直供</h3>
+                </div>
+                
+                <div class="brand-card">
+                    <div class="brand-logo">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="brand-name" data-zh="正品保障" data-en="Authentic Guarantee" data-kr="정품 보장">正品保障</h3>
+                </div>
+                
+                <div class="brand-card">
+                    <div class="brand-logo">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3 class="brand-name" data-zh="品牌丰富" data-en="Rich Brand Portfolio" data-kr="풍부한 브랜드">品牌丰富</h3>
+                </div>
+                
+                <div class="brand-card">
+                    <div class="brand-logo">
+                        <i class="fas fa-globe-asia"></i>
+                    </div>
+                    <h3 class="brand-name" data-zh="全球购支持" data-en="Global Shopping Support" data-kr="글로벌 쇼핑 지원">全球购支持</h3>
+                </div>
+                
+                <div class="brand-card">
+                    <div class="brand-logo">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="brand-name" data-zh="合作共赢" data-en="Win-Win Partnership" data-kr="상생 파트너십">合作共赢</h3>
+                </div>
+                
+                <div class="brand-card">
+                    <div class="brand-logo">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3 class="brand-name" data-zh="优惠价格" data-en="Competitive Pricing" data-kr="경쟁력 있는 가격">优惠价格</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+         <!-- Supply Chain Section -->
+     <section id="supply-chain" class="supply-chain">
+         <div class="container">
+             <h2 class="section-title" data-zh="全球供应链优势" data-en="Global Supply Chain Advantages" data-kr="글로벌 공급망 우위">全球供应链优势</h2>
+             <div class="supply-chain-content">
+                 <div class="supply-chain-text">
+                     <p data-zh="我们在全球战略要点建立了高效的供应链网络,确保产品以最优价格和最快速度送达客户" data-en="We have established an efficient supply chain network at global strategic points, ensuring products are delivered to customers at optimal prices and fastest speeds" data-kr="우리는 글로벌 전략적 요점에 효율적인 공급망 네트워크를 구축하여 제품이 최적의 가격과 최고의 속도로 고객에게 전달되도록 보장합니다">我们在全球战略要点建立了高效的供应链网络,确保产品以最优价格和最快速度送达客户</p>
+                 </div>
+                 <div class="supply-chain-features">
+                     <div class="feature-card">
+                         <div class="feature-icon">
+                             <i class="fas fa-warehouse"></i>
+                         </div>
+                         <h3 data-zh="香港配送中心" data-en="Hong Kong Distribution Center" data-kr="홍콩 배송 센터">香港配送中心</h3>
+                         <p data-zh="位于亚洲金融中心,免税环境,连接东西方的贸易枢纽,为全球客户提供高效配送" data-en="Located in Asia's financial center, a duty-free environment, connecting East and West as a trade hub, providing efficient distribution for global customers" data-kr="아시아 금융 중심지에 위치, 면세 환경, 동서양을 연결하는 무역 허브, 글로벌 고객을 위한 효율적인 배송 제공">位于亚洲金融中心,免税环境,连接东西方的贸易枢纽,为全球客户提供高效配送</p>
+                         <div class="feature-tags">
+                             <span class="tag" data-zh="24小时发货" data-en="24-hour delivery" data-kr="24시간 배송">24小时发货</span>
+                             <span class="tag" data-zh="免税仓储" data-en="Duty-free warehousing" data-kr="면세 창고">免税仓储</span>
+                         </div>
+                     </div>
+                     <div class="feature-card">
+                         <div class="feature-icon">
+                             <i class="fas fa-truck"></i>
+                         </div>
+                         <h3 data-zh="中国保税仓" data-en="China Bonded Warehouse" data-kr="중국 보세창고">中国保税仓</h3>
+                         <p data-zh="享受保税政策优势,提供中国大陆及周边地区最便捷的通关和配送体验" data-en="Enjoy the advantages of bonded policies, providing the most convenient customs clearance and distribution experience for mainland China and surrounding areas" data-kr="보세 정책의 이점을 누리며, 중국 본토 및 주변 지역에 가장 편리한 통관 및 배송 경험 제공">享受保税政策优势,提供中国大陆及周边地区最便捷的通关和配送体验</p>
+                         <div class="feature-tags">
+                             <span class="tag" data-zh="便捷通关" data-en="Convenient customs clearance" data-kr="편리한 통관">便捷通关</span>
+                             <span class="tag" data-zh="保税优势" data-en="Bonded advantages" data-kr="보세 이점">保税优势</span>
+                         </div>
+                     </div>
+                     <div class="feature-card">
+                         <div class="feature-icon">
+                             <i class="fas fa-globe-asia"></i>
+                         </div>
+                         <h3 data-zh="韩国转运中心" data-en="Korean Transit Center" data-kr="한국 중계 센터">韩国转运中心</h3>
+                         <p data-zh="东北亚战略枢纽,为韩国、日本、中国等地区提供最快速的物流通道和优质服务" data-en="Northeast Asian strategic hub, providing the fastest logistics channels and quality services for Korea, Japan, China and other regions" data-kr="동북아시아 전략적 허브, 한국, 일본, 중국 등 지역에 가장 빠른 물류 채널과 품질 서비스 제공">东北亚战略枢纽,为韩国、日本、中国等地区提供最快速的物流通道和优质服务</p>
+                         <div class="feature-tags">
+                             <span class="tag" data-zh="东北亚优势" data-en="Northeast Asian advantages" data-kr="동북아시아 이점">东北亚优势</span>
+                             <span class="tag" data-zh="快速转运" data-en="Fast transit" data-kr="빠른 중계">快速转运</span>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+          </section>
+
+    <!-- Korean Trends Section -->
+    <section id="korean-hot" class="korean-trends">
+        <div class="container">
+            <h2 class="section-title" data-zh="韩妆趋势洞察" data-en="Korean Beauty Trends" data-kr="한국 뷰티 트렌드">韩妆趋势洞察</h2>
+            
+            <div class="trends-content">
+                <!-- 趋势关键词云 -->
+                <div class="trends-keywords">
+                    <div class="keyword-cloud">
+                        <span class="keyword keyword-large" data-zh="K-Beauty" data-en="K-Beauty" data-kr="K-Beauty">K-Beauty</span>
+                        <span class="keyword keyword-medium" data-zh="水光肌" data-en="Glass Skin" data-kr="글래스 스킨">水光肌</span>
+                        <span class="keyword keyword-small" data-zh="气垫" data-en="Cushion" data-kr="쿠션">气垫</span>
+                        <span class="keyword keyword-large" data-zh="韩式护肤" data-en="Korean Skincare" data-kr="한국 스킨케어">韩式护肤</span>
+                        <span class="keyword keyword-medium" data-zh="BB霜" data-en="BB Cream" data-kr="BB크림">BB霜</span>
+                        <span class="keyword keyword-small" data-zh="面膜" data-en="Sheet Mask" data-kr="시트마스크">面膜</span>
+                        <span class="keyword keyword-medium" data-zh="精华" data-en="Essence" data-kr="에센스">精华</span>
+                        <span class="keyword keyword-small" data-zh="防晒" data-en="Sunscreen" data-kr="선크림">防晒</span>
+                        <span class="keyword keyword-large" data-zh="韩式彩妆" data-en="Korean Makeup" data-kr="한국 메이크업">韩式彩妆</span>
+                    </div>
+                </div>
+                
+                <!-- 韩妆爆款趋势描述 -->
+                <div class="trend-descriptions">
+                    <div class="trend-grid">
+                        <div class="trend-card">
+                            <div class="trend-icon">
+                                <i class="fas fa-tint"></i>
+                            </div>
+                            <h3 class="trend-title" data-zh="水光肌" data-en="Glass Skin" data-kr="글래스 스킨">水光肌</h3>
+                            <p class="trend-description" data-zh="清透水润，素颜般光泽" data-en="Clear and dewy, natural glow" data-kr="맑고 촉촉한 자연스러운 광택">清透水润，素颜般光泽</p>
+                        </div>
+                        
+                        <div class="trend-card">
+                            <div class="trend-icon">
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                            <h3 class="trend-title" data-zh="轻养肤" data-en="Light Skincare" data-kr="라이트 스킨케어">轻养肤</h3>
+                            <p class="trend-description" data-zh="护肤与底妆结合，养肤上妆" data-en="Skincare meets makeup, nourishing beauty" data-kr="스킨케어와 메이크업의 결합, 영양 가득한 뷰티">护肤与底妆结合，养肤上妆</p>
+                        </div>
+                        
+                        <div class="trend-card">
+                            <div class="trend-icon">
+                                <i class="fas fa-sparkles"></i>
+                            </div>
+                            <h3 class="trend-title" data-zh="持久定妆" data-en="Long-lasting Makeup" data-kr="지속적인 메이크업">持久定妆</h3>
+                            <p class="trend-description" data-zh="轻盈服帖，妆容整日在线" data-en="Light and comfortable, all-day wear" data-kr="가볍고 편안한 하루 종일 지속">轻盈服帖，妆容整日在线</p>
+                        </div>
+                        
+                        <div class="trend-card">
+                            <div class="trend-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <h3 class="trend-title" data-zh="自然感" data-en="Natural Look" data-kr="자연스러운 룩">自然感</h3>
+                            <p class="trend-description" data-zh="淡雅妆效，衬托真实美丽" data-en="Subtle makeup, enhancing natural beauty" data-kr="은은한 메이크업으로 자연스러운 아름다움 강조">淡雅妆效，衬托真实美丽</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eco-Clearance Section -->
+    <section id="clearance" class="eco-clearance">
+        <div class="container">
+            <h2 class="section-title" data-zh="环保清仓·限时惊喜" data-en="Eco-Clearance · Limited Surprise" data-kr="친환경 클리어런스 · 한정 서프라이즈">环保清仓·限时惊喜</h2>
+            
+            <div class="clearance-content">
+                <!-- 知识科普卡片区域 -->
+                <div class="knowledge-cards">
+                    <div class="knowledge-grid">
+                        <div class="knowledge-card">
+                            <div class="knowledge-icon">
+                                <i class="fas fa-hourglass-half"></i>
+                            </div>
+                            <h3 class="knowledge-title" data-zh="化妆品保质期" data-en="Cosmetic Expiry Date" data-kr="화장품 유통기한">化妆品保质期</h3>
+                            <p class="knowledge-description" data-zh="大多数护肤品开封后建议12-24个月内使用" data-en="Most skincare products are recommended to use within 12-24 months after opening" data-kr="대부분의 스킨케어 제품은 개봉 후 12-24개월 내 사용 권장">大多数护肤品开封后建议12-24个月内使用</p>
+                        </div>
+                        
+                        <div class="knowledge-card">
+                            <div class="knowledge-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <h3 class="knowledge-title" data-zh="使用小贴士" data-en="Usage Tips" data-kr="사용 팁">使用小贴士</h3>
+                            <p class="knowledge-description" data-zh="避免阳光直射，妆品更持久" data-en="Avoid direct sunlight for longer-lasting cosmetics" data-kr="직사광선을 피하면 화장품이 더 오래 지속됩니다">避免阳光直射，妆品更持久</p>
+                        </div>
+                        
+                        <div class="knowledge-card">
+                            <div class="knowledge-icon">
+                                <i class="fas fa-box"></i>
+                            </div>
+                            <h3 class="knowledge-title" data-zh="存放方法" data-en="Storage Method" data-kr="보관 방법">存放方法</h3>
+                            <p class="knowledge-description" data-zh="阴凉干燥环境可延长使用体验" data-en="Cool and dry environment extends usage experience" data-kr="서늘하고 건조한 환경에서 사용 경험을 연장할 수 있습니다">阴凉干燥环境可延长使用体验</p>
+                        </div>
+                        
+                        <div class="knowledge-card">
+                            <div class="knowledge-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <h3 class="knowledge-title" data-zh="理性消费" data-en="Rational Consumption" data-kr="합리적 소비">理性消费</h3>
+                            <p class="knowledge-description" data-zh="珍惜每一份美丽，减少浪费" data-en="Cherish every beauty, reduce waste" data-kr="모든 아름다움을 소중히 여기고 낭비를 줄입니다">珍惜每一份美丽，减少浪费</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Online Inquiry Form Section -->
+    <section id="inquiry" class="inquiry">
+        <div class="container">
+            <div class="inquiry-content">
+                <h2 class="section-title" data-zh="在线询价表" data-en="Online Inquiry Form" data-kr="온라인 문의 양식">在线询价表</h2>
+                <form class="inquiry-form" id="inquiryForm">
+                    <div class="form-group">
+                        <label for="company" data-zh="公司名称" data-en="Company Name" data-kr="회사명">公司名称</label>
+                        <input type="text" id="company" name="company" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact" data-zh="联系人" data-en="Contact Person" data-kr="담당자">联系人</label>
+                        <input type="text" id="contact" name="contact" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-zh="电子邮箱" data-en="Email" data-kr="이메일">电子邮箱</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="products" data-zh="感兴趣的产品(品牌/名称)" data-en="Products of Interest (Brand/Name)" data-kr="관심 제품(브랜드/명칭)">感兴趣的产品(品牌/名称)</label>
+                        <textarea id="products" name="products" rows="3" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="quantity" data-zh="预计采购数量" data-en="Estimated Purchase Quantity" data-kr="예상 구매 수량">预计采购数量</label>
+                        <input type="text" id="quantity" name="quantity" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="market" data-zh="目标市场/国家" data-en="Target Market/Country" data-kr="목표 시장/국가">目标市场/国家</label>
+                        <input type="text" id="market" name="market" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="additional" data-zh="附加信息" data-en="Additional Information" data-kr="추가 정보">附加信息</label>
+                        <textarea id="additional" name="additional" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" data-zh="提交询价" data-en="Submit Inquiry" data-kr="문의 제출">提交询价</button>
+                </form>
+                
+                <!-- 提交成功提示 -->
+                <div id="successMessage" class="success-message" style="display: none;">
+                    <i class="fas fa-check-circle"></i>
+                    <h3 data-zh="提交成功！" data-en="Submitted Successfully!" data-kr="제출 성공!">提交成功！</h3>
+                    <p data-zh="感谢您的询价，我们将在24小时内回复您。" data-en="Thank you for your inquiry. We will respond within 24 hours." data-kr="문의해 주셔서 감사합니다. 24시간 내에 답변드리겠습니다.">感谢您的询价，我们将在24小时内回复您。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title" data-zh="全球美妆供应链" data-en="Global Beauty Supply Chain" data-kr="글로벌 뷰티 공급망">全球美妆供应链</h3>
+                    <p class="footer-description" data-zh="以韩国转运中心为核心,连接全球美妆资源,服务新兴市场" data-en="With Korean Transit Center as the core, connecting global beauty resources and serving emerging markets" data-kr="한국 운송 센터를 핵심으로 하여 글로벌 뷰티 리소스를 연결하고 신흥 시장에 서비스 제공">以韩国转运中心为核心,连接全球美妆资源,服务新兴市场</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title" data-zh="合作优势" data-en="Partnership Advantages" data-kr="파트너십 우위">合作优势</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-zh="免税店直供" data-en="Direct from Duty-Free" data-kr="면세점 직공급">免税店直供</a></li>
+                        <li><a href="#" data-zh="正品保障" data-en="Authentic Guarantee" data-kr="정품 보장">正品保障</a></li>
+                        <li><a href="#" data-zh="品牌丰富" data-en="Rich Brand Portfolio" data-kr="풍부한 브랜드">品牌丰富</a></li>
+                        <li><a href="#" data-zh="全球购支持" data-en="Global Shopping Support" data-kr="글로벌 쇼핑 지원">全球购支持</a></li>
+                        <li><a href="#" data-zh="合作共赢" data-en="Win-Win Partnership" data-kr="상생 파트너십">合作共赢</a></li>
+                        <li><a href="#" data-zh="优惠价格" data-en="Competitive Pricing" data-kr="경쟁력 있는 가격">优惠价格</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title" data-zh="产品分类" data-en="Product Categories" data-kr="제품 분류">产品分类</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-zh="香水" data-en="Fragrance" data-kr="향수">香水</a></li>
+                        <li><a href="#" data-zh="护肤" data-en="Skincare" data-kr="스킨케어">护肤</a></li>
+                        <li><a href="#" data-zh="彩妆" data-en="Makeup" data-kr="메이크업">彩妆</a></li>
+                        <li><a href="#" data-zh="洗护" data-en="Hair & Body Care" data-kr="헤어&바디케어">洗护</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title" data-zh="联系我们" data-en="Contact Us" data-kr="연락처">联系我们</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span data-zh="江苏省扬州市邗江区维扬路27号宝龙广场5栋1923-1924" data-en="Building 5, Room 1923-1924, Powerlong Plaza, 27 Weiyang Road, Hanjiang District, Yangzhou, Jiangsu Province" data-kr="장쑤성 양저우시 한장구 웨이양로 27번지 파워롱 플라자 5동 1923-1924호">江苏省扬州市邗江区维扬路27号宝龙广场5栋1923-1924</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+86 19802050502</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>liumengting711@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-weixin"></i>
+                            <span data-zh="CrystalLau7" data-en="CrystalLau7" data-kr="CrystalLau7">CrystalLau7</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-divider"></div>
+            
+            <div class="footer-bottom">
+                <p data-zh="© 2023 全球美妆供应链,版权所有." data-en="© 2023 Global Beauty Supply Chain, All Rights Reserved." data-kr="© 2023 글로벌 뷰티 공급망, 모든 권리 보유.">© 2023 全球美妆供应链,版权所有.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 data-zh="联系我们" data-en="Contact Us" data-kr="연락처">联系我们</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name" data-zh="姓名" data-en="Name" data-kr="이름">姓名</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" data-zh="邮箱" data-en="Email" data-kr="이메일">邮箱</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="company" data-zh="公司" data-en="Company" data-kr="회사">公司</label>
+                    <input type="text" id="company" name="company">
+                </div>
+                <div class="form-group">
+                    <label for="message" data-zh="留言" data-en="Message" data-kr="메시지">留言</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" data-zh="发送" data-en="Send" data-kr="보내기">发送</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
