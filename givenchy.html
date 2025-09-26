@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Givenchy 产品目录</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../product-styles.css">
+  <link rel="stylesheet" href="../chanel-style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="product-nav">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo" onclick="returnToBrands(event)" data-zh="← 返回首页" data-en="← Back to Home" data-kr="← 홈으로 돌아가기">← 返回首页</a>
+      <div class="nav-breadcrumb">
+        <a href="../index.html" data-zh="首页" data-en="Home" data-kr="홈">首页</a> > 
+        <a href="../index.html#brands" data-zh="品牌" data-en="Brands" data-kr="브랜드">品牌</a> > 
+        <span data-zh="Givenchy" data-en="Givenchy" data-kr="지방치">Givenchy</span>
+      </div>
+      <div class="nav-lang-switcher">
+        <button class="lang-btn" data-lang="zh" data-zh="简体中文" data-en="简体中文" data-kr="简体中文">简体中文</button>
+        <span class="lang-separator">|</span>
+        <button class="lang-btn" data-lang="en" data-zh="English" data-en="English" data-kr="English">English</button>
+        <span class="lang-separator">|</span>
+        <button class="lang-btn" data-lang="kr" data-zh="한국어" data-en="한국어" data-kr="한국어">한국어</button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="product-main">
+    <div class="product-gallery">
+      <div class="main-image-container">
+        <img src="../images/products/givenchy-main.jpg" alt="Givenchy产品" id="mainProductImage" onerror="console.log('图片加载失败，使用备用图片'); this.src='https://images.unsplash.com/photo-1570194065650-d99fb4bedf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'">
+      </div>
+      <div class="thumbnail-images">
+        <img src="../images/products/givenchy-thumb1.jpg" alt="产品图1" class="thumbnail active" onclick="changeMainImage(this)" onerror="this.src='https://images.unsplash.com/photo-1570194065650-d99fb4bedf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80'">
+        <img src="../images/products/givenchy-thumb2.jpg" alt="产品图2" class="thumbnail" onclick="changeMainImage(this)" onerror="this.src='https://images.unsplash.com/photo-1556228720-195a672e8a03?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80'">
+      </div>
+    </div>
+
+    <div class="product-details">
+      <div class="product-header">
+        <h1 class="product-title" data-zh="Givenchy 奢华美妆系列" data-en="Givenchy Luxury Beauty Series" data-kr="지방치 럭셔리 뷰티 시리즈">Givenchy 奢华美妆系列</h1>
+        <p class="product-subtitle" data-zh="法式优雅 · 奢华彩妆 · 经典香水" data-en="French Elegance · Luxury Makeup · Classic Fragrance" data-kr="프랑스 우아함 · 럭셔리 메이크업 · 클래식 향수">法式优雅 · 奢华彩妆 · 经典香水</p>
+      </div>
+
+      <div class="product-specs">
+        <div class="spec-row">
+          <span class="spec-label" data-zh="净含量：" data-en="Net Content：" data-kr="순함량：">净含量：</span>
+          <span class="spec-value">30ml</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-label" data-zh="原产地：" data-en="Country of Origin：" data-kr="원산지：">原产地：</span>
+          <span class="spec-value" data-zh="法国" data-en="France" data-kr="프랑스">法国</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-label" data-zh="生产批号：" data-en="Batch Number：" data-kr="제조번호：">生产批号：</span>
+          <span class="spec-value" data-zh="见包装" data-en="See packaging" data-kr="포장 참조">见包装</span>
+        </div>
+      </div>
+
+      <div class="product-actions">
+        <button class="btn-buy-now" onclick="buyNow()">
+          <span data-zh="立即询价" data-en="Inquire Now" data-kr="문의하기">立即询价</span>
+        </button>
+      </div>
+
+      <div class="product-benefits">
+        <h2 data-zh="产品功效" data-en="Product Benefits" data-kr="제품 효능">产品功效</h2>
+        <div class="benefit-tags">
+          <span class="benefit-tag" data-zh="持久" data-en="Long-lasting" data-kr="지속성">持久</span>
+          <span class="benefit-tag" data-zh="显色" data-en="High Pigment" data-kr="발색">显色</span>
+          <span class="benefit-tag" data-zh="滋润" data-en="Moisturizing" data-kr="보습">滋润</span>
+          <span class="benefit-tag" data-zh="奢华" data-en="Luxury" data-kr="럭셔리">奢华</span>
+        </div>
+      </div>
+
+      <div class="product-info-sections">
+        <!-- 产品描述 -->
+        <section class="info-section">
+          <h2 data-zh="产品描述" data-en="Product Description" data-kr="제품 설명">产品描述</h2>
+          <p data-zh="Givenchy奢华美妆系列，传承法式优雅传统，融合现代彩妆科技，为追求品质的用户提供专业级美妆体验。精选优质成分，展现独特魅力。" data-en="Givenchy Luxury Beauty Series, inheriting French elegant tradition, combining modern makeup technology, providing professional-grade beauty experience for quality-seeking users. Selected premium ingredients, showing unique charm." data-kr="지방치 럭셔리 뷰티 시리즈, 프랑스 우아한 전통을 계승하고 현대 메이크업 기술을 결합하여 품질을 추구하는 사용자에게 전문급 뷰티 경험을 제공합니다. 선별된 프리미엄 성분으로 독특한 매력을 보여줍니다.">Givenchy奢华美妆系列，传承法式优雅传统，融合现代彩妆科技，为追求品质的用户提供专业级美妆体验。精选优质成分，展现独特魅力。</p>
+        </section>
+
+        <!-- 主要成分 -->
+        <section class="info-section">
+          <h2 data-zh="主要成分" data-en="Main Ingredients" data-kr="주요 성분">主要成分</h2>
+          <div class="ingredient-list">
+            <div class="ingredient-item">
+              <strong data-zh="维生素E：" data-en="Vitamin E：" data-kr="비타민 E：">维生素E：</strong>
+              <span data-zh="抗氧化成分，保护肌肤免受自由基伤害" data-en="Antioxidant ingredient, protects skin from free radical damage" data-kr="항산화 성분으로 피부를 자유라디칼로부터 보호">抗氧化成分，保护肌肤免受自由基伤害</span>
+            </div>
+            <div class="ingredient-item">
+              <strong data-zh="透明质酸：" data-en="Hyaluronic Acid：" data-kr="히알루론산：">透明质酸：</strong>
+              <span data-zh="深层补水，持久保湿锁水" data-en="Deep hydration, long-lasting moisture lock" data-kr="깊은 수분 공급, 지속적인 보습">深层补水，持久保湿锁水</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- 使用方法 -->
+        <section class="info-section">
+          <h2 data-zh="使用方法" data-en="How to Use" data-kr="사용 방법">使用方法</h2>
+          <p data-zh="清洁肌肤后，取适量产品均匀涂抹。建议配合Givenchy其他美妆产品使用，打造完美妆容。" data-en="After cleansing skin, take an appropriate amount of product and apply evenly. It is recommended to use with other Givenchy beauty products to create perfect makeup." data-kr="피부를 깨끗하게 한 후 적당량의 제품을 취해 고르게 발라주세요. 완벽한 메이크업을 위해 다른 지방치 뷰티 제품과 함께 사용하는 것을 권장합니다.">清洁肌肤后，取适量产品均匀涂抹。建议配合Givenchy其他美妆产品使用，打造完美妆容。</p>
+        </section>
+
+        <!-- 适用人群 -->
+        <section class="info-section">
+          <h2 data-zh="适用人群" data-en="Suitable For" data-kr="적용 대상">适用人群</h2>
+          <p data-zh="所有肌肤类型，特别适合追求奢华美妆体验的用户。对于有持久、显色、滋润需求的用户效果显著。" data-en="All skin types, especially suitable for users who pursue luxurious beauty experience. Highly effective for users with long-lasting, high pigment, and moisturizing needs." data-kr="모든 피부 타입, 특히 럭셔리한 뷰티 경험을 추구하는 사용자에게 적합합니다. 지속성, 발색, 보습이 필요한 사용자에게 매우 효과적입니다.">所有肌肤类型，特别适合追求奢华美妆体验的用户。对于有持久、显色、滋润需求的用户效果显著。</p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- 固定产品信息栏 -->
+  <div class="fixed-product-bar" id="fixedProductBar">
+    <div class="fixed-product-info">
+      <div class="fixed-product-image">
+        <img src="../images/products/givenchy-main.jpg" alt="Givenchy产品" onerror="this.src='https://images.unsplash.com/photo-1570194065650-d99fb4bedf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=60&q=80'">
+      </div>
+      <div class="fixed-product-details">
+        <h3 class="fixed-product-name" data-zh="Givenchy 奢华美妆系列" data-en="Givenchy Luxury Beauty Series" data-kr="지방치 럭셔리 뷰티 시리즈">Givenchy 奢华美妆系列</h3>
+        <span class="fixed-product-spec" data-zh="- 30ml" data-en="- 30ml" data-kr="- 30ml">- 30ml</span>
+      </div>
+      <div class="fixed-product-price">
+        <span class="price" data-zh="¥1,800" data-en="¥1,800" data-kr="¥1,800">¥1,800</span>
+      </div>
+    </div>
+    <div class="fixed-product-actions">
+      <button class="btn-buy-now-fixed" onclick="buyNow()">
+        <span data-zh="立即询价" data-en="Inquire Now" data-kr="문의하기">立即询价</span>
+      </button>
+    </div>
+  </div>
+
+  <script>
+    // 语言切换功能
+    let currentLang = 'zh';
+
+    function switchLanguage(lang) {
+      currentLang = lang;
+      
+      // 更新语言按钮状态
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      document.querySelector(`[data-lang="${lang}"]`).classList.add('active');
+      
+      // 更新所有多语言元素
+      document.querySelectorAll('[data-zh]').forEach(element => {
+        const text = element.getAttribute(`data-${lang}`);
+        if (text) {
+          element.textContent = text;
+        }
+      });
+    }
+
+    // 初始化语言状态
+    function initializeLanguage() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const lang = urlParams.get('lang');
+      
+      if (lang && ['zh', 'en', 'kr'].includes(lang)) {
+        switchLanguage(lang);
+      }
+    }
+
+    // 图片切换功能
+    function changeMainImage(thumbnail) {
+      const mainImage = document.getElementById('mainProductImage');
+      mainImage.src = thumbnail.src.replace('w=200', 'w=800');
+      
+      // 更新缩略图激活状态
+      document.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('active'));
+      thumbnail.classList.add('active');
+    }
+
+    // 立即询价功能
+    function buyNow() {
+      alert(currentLang === 'zh' ? '询价功能开发中，请联系客服' : 
+            currentLang === 'en' ? 'Inquiry function under development, please contact customer service' : 
+            '문의 기능 개발 중입니다. 고객 서비스에 문의하세요');
+    }
+
+    // 检查图片加载状态
+    function checkImageLoading() {
+      const mainImage = document.getElementById('mainProductImage');
+      if (mainImage) {
+        mainImage.onload = function() {
+          console.log('主图片加载成功');
+        };
+        mainImage.onerror = function() {
+          console.log('主图片加载失败，路径:', this.src);
+        };
+      }
+    }
+
+    // 节流函数
+    function throttle(func, wait) {
+      let timeout;
+      return function executedFunction(...args) {
+        const later = () => {
+          clearTimeout(timeout);
+          func(...args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+      };
+    }
+
+    // 滚动监听功能
+    function handleScroll() {
+      const fixedBar = document.getElementById('fixedProductBar');
+      if (!fixedBar) return;
+      
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      
+      // 当滚动超过200px时显示固定产品信息栏，类似Chanel官网
+      if (scrollTop > 200) {
+        if (!fixedBar.classList.contains('show')) {
+          fixedBar.classList.add('show');
+        }
+      } else {
+        if (fixedBar.classList.contains('show')) {
+          fixedBar.classList.remove('show');
+        }
+      }
+    }
+
+    // 智能返回首页
+    function returnToBrands(event) {
+      event.preventDefault();
+      
+      // 获取来源参数和当前语言
+      const urlParams = new URLSearchParams(window.location.search);
+      const fromSection = urlParams.get('from') || 'brands';
+      
+      // 跳转到首页，保持来源信息和语言状态
+      window.location.href = `../index.html?from=${fromSection}&lang=${currentLang}`;
+    }
+
+    // 页面加载完成后初始化
+    document.addEventListener('DOMContentLoaded', function() {
+      // 初始化语言状态
+      initializeLanguage();
+      
+      // 检查图片加载
+      checkImageLoading();
+      
+      // 绑定语言切换按钮事件
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+          switchLanguage(this.getAttribute('data-lang'));
+        });
+      });
+      
+      // 绑定滚动事件（使用节流优化性能）
+      window.addEventListener('scroll', throttle(handleScroll, 10));
+    });
+  </script>
+</body>
+</html>

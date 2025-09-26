@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Helena Rubinstein 产品目录</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../product-styles.css">
+  <link rel="stylesheet" href="../chanel-style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="product-nav">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo" onclick="returnToBrands(event)" data-zh="← 返回首页" data-en="← Back to Home" data-kr="← 홈으로 돌아가기">← 返回首页</a>
+      <div class="nav-breadcrumb">
+        <a href="../index.html" data-zh="首页" data-en="Home" data-kr="홈">首页</a> > 
+        <a href="../index.html#brands" data-zh="品牌" data-en="Brands" data-kr="브랜드">品牌</a> > 
+        <span data-zh="Helena Rubinstein" data-en="Helena Rubinstein" data-kr="헬레나 루빈스타인">Helena Rubinstein</span>
+      </div>
+      <div class="language-switcher">
+        <button class="lang-btn active" data-lang="zh">简体中文</button>
+        <span class="separator">|</span>
+        <button class="lang-btn" data-lang="en">English</button>
+        <span class="separator">|</span>
+        <button class="lang-btn" data-lang="kr">한국어</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 产品主展示区域 -->
+  <main class="product-main">
+    <div class="product-container">
+      <!-- 产品图片区域 -->
+      <div class="product-gallery">
+        <div class="main-image">
+          <img src="../images/products/helena-rubinstein-main.jpg" alt="赫莲娜黑绷带面霜" id="mainProductImage" onerror="console.log('图片加载失败，使用备用图片'); this.src='https://images.unsplash.com/photo-1570194065650-d99fb4bedf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'">
+        </div>
+        <div class="thumbnail-images">
+          <img src="../images/products/helena-rubinstein-thumb1.jpg" alt="产品图1" class="thumbnail active" onclick="changeMainImage(this)" onerror="this.src='https://images.unsplash.com/photo-1570194065650-d99fb4bedf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80'">
+          <img src="../images/products/helena-rubinstein-thumb2.jpg" alt="产品图2" class="thumbnail" onclick="changeMainImage(this)" onerror="this.src='https://images.unsplash.com/photo-1556228720-195a672e8a03?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80'">
+        </div>
+      </div>
+
+      <!-- 产品信息区域 -->
+      <div class="product-details">
+        <div class="product-header">
+          <h1 class="product-title" data-zh="赫莲娜黑绷带面霜" data-en="Helena Rubinstein Re-Plasty Age Recovery Cream" data-kr="헬레나 루빈스타인 리플라스티 에이지 리커버리 크림">赫莲娜黑绷带面霜</h1>
+          <p class="product-subtitle">Re-Plasty Age Recovery Cream</p>
+          <div class="product-specifications">
+            <div class="spec-item">
+              <span class="spec-label" data-zh="净含量：" data-en="Net Content：" data-kr="순함량：">净含量：</span>
+              <span class="spec-value">100ml</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label" data-zh="原产国：" data-en="Country of Origin：" data-kr="원산지：">原产国：</span>
+              <span class="spec-value" data-zh="法国" data-en="France" data-kr="프랑스">法国</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-pricing">
+          <div class="price-container">
+            <span class="current-price">¥3,580</span>
+            <span class="original-price">¥4,200</span>
+          </div>
+          <div class="stock-info">
+            <span class="stock-status" data-zh="现货" data-en="In Stock" data-kr="재고 있음">现货</span>
+            <span class="moq-info" data-zh="起订量: 5件" data-en="MOQ: 5 pieces" data-kr="최소주문량: 5개">起订量: 5件</span>
+          </div>
+        </div>
+
+        <div class="product-actions">
+          <button class="btn-buy-now" onclick="buyNow()" data-zh="立即询价" data-en="Inquire Now" data-kr="지금 문의하기">立即询价</button>
+        </div>
+
+        <!-- 产品功效标签 -->
+        <div class="product-benefits">
+          <h3 data-zh="产品功效" data-en="Product Benefits" data-kr="제품 효능">产品功效</h3>
+          <div class="benefit-tags">
+            <span class="benefit-tag" data-zh="淡纹" data-en="Anti-Wrinkle" data-kr="주름 개선">淡纹</span>
+            <span class="benefit-tag" data-zh="舒缓" data-en="Soothing" data-kr="진정">舒缓</span>
+            <span class="benefit-tag" data-zh="紧致" data-en="Firming" data-kr="탄력">紧致</span>
+            <span class="benefit-tag" data-zh="保湿" data-en="Hydrating" data-kr="보습">保湿</span>
+            <span class="benefit-tag" data-zh="修护" data-en="Repairing" data-kr="수리">修护</span>
+            <span class="benefit-tag" data-zh="补水" data-en="Moisturizing" data-kr="수분 공급">补水</span>
+            <span class="benefit-tag" data-zh="抗皱" data-en="Anti-Aging" data-kr="안티에이징">抗皱</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 产品详细信息 -->
+    <div class="product-info-sections">
+      <!-- 产品描述 -->
+      <section class="info-section">
+        <h2 data-zh="产品描述" data-en="Product Description" data-kr="제품 설명">产品描述</h2>
+        <p data-zh="赫莲娜黑绷带面霜，蕴含30%玻色因，深层修护肌肤，有效淡化细纹，提升肌肤紧致度，为肌肤提供持久保湿和滋养。这款面霜采用先进的抗衰老科技，能够显著改善肌肤质地，让肌肤重现年轻光彩。" data-en="Helena Rubinstein Re-Plasty Age Recovery Cream, enriched with 30% Pro-Xylane, deeply repairs skin, effectively reduces fine lines, improves skin firmness, and provides long-lasting hydration and nourishment. This cream uses advanced anti-aging technology to significantly improve skin texture and restore youthful radiance." data-kr="헬레나 루빈스타인 리플라스티 에이지 리커버리 크림은 30% 프로자일란을 함유하여 피부를 깊이 수리하고, 주름을 효과적으로 개선하며, 피부 탄력을 높이고 지속적인 보습과 영양을 제공합니다. 이 크림은 첨단 안티에이징 기술을 사용하여 피부 질감을 크게 개선하고 젊은 광채를 되찾아줍니다.">赫莲娜黑绷带面霜，蕴含30%玻色因，深层修护肌肤，有效淡化细纹，提升肌肤紧致度，为肌肤提供持久保湿和滋养。这款面霜采用先进的抗衰老科技，能够显著改善肌肤质地，让肌肤重现年轻光彩。</p>
+      </section>
+
+      <!-- 主要成分 -->
+      <section class="info-section">
+        <h2 data-zh="主要成分" data-en="Key Ingredients" data-kr="주요 성분">主要成分</h2>
+        <div class="key-ingredients">
+          <h3 data-zh="核心功效成分" data-en="Core Active Ingredients" data-kr="핵심 활성 성분">核心功效成分</h3>
+          <ul class="ingredient-list">
+            <li><strong data-zh="羟丙基四氢吡喃三醇（玻色因）：" data-en="Pro-Xylane (30%):" data-kr="프로자일란 (30%):">羟丙基四氢吡喃三醇（玻色因）：</strong><span data-zh="30%高浓度，促进胶原蛋白生成，提升肌肤紧致度" data-en="High concentration, promotes collagen production, improves skin firmness" data-kr="고농도, 콜라겐 생산 촉진, 피부 탄력 개선">30%高浓度，促进胶原蛋白生成，提升肌肤紧致度</span></li>
+            <li><strong data-zh="透明质酸钠：" data-en="Sodium Hyaluronate:" data-kr="하이알루론산 나트륨:">透明质酸钠：</strong><span data-zh="深层补水，持久保湿锁水" data-en="Deep hydration, long-lasting moisture lock" data-kr="깊은 보습, 지속적인 수분 공급">深层补水，持久保湿锁水</span></li>
+            <li><strong data-zh="欧洲越桔果提取物：" data-en="European Blueberry Extract:" data-kr="유럽 블루베리 추출물:">欧洲越桔果提取物：</strong><span data-zh="抗氧化，保护肌肤免受自由基伤害" data-en="Antioxidant, protects skin from free radical damage" data-kr="항산화, 자유라디칼 손상으로부터 피부 보호">抗氧化，保护肌肤免受自由基伤害</span></li>
+            <li><strong data-zh="甘草酸二钾：" data-en="Dipotassium Glycyrrhizate:" data-kr="감초산 이칼륨:">甘草酸二钾：</strong><span data-zh="舒缓肌肤，减少敏感反应" data-en="Soothes skin, reduces sensitivity" data-kr="피부 진정, 민감성 감소">舒缓肌肤，减少敏感反应</span></li>
+          </ul>
+        </div>
+        
+        <div class="full-ingredients">
+          <h3 data-zh="完整成分列表" data-en="Complete Ingredient List" data-kr="완전 성분 목록">完整成分列表</h3>
+          <div class="ingredient-content">
+            <p><strong data-zh="成分：" data-en="Ingredients:" data-kr="성분:">成分：</strong><span data-zh="水、丙二醇、聚二甲基硅氧烷、羟丙基四氢吡喃三醇、异十六烷、环已硅氧烷、合成蜡、甘油、聚二甲基硅氧烷PEG-10/15 交联聚合物、淀粉辛烯基琥珀酸铝、月桂基PEG-9聚二甲基硅氧乙基聚二甲基硅氧烷、C177163、硫酸镁、苯氧乙醇、羟基硬脂酸乙基己酯、丙烯腈/甲基丙烯酸甲酯/偏二氯乙烯共聚物" data-en="Water, Propylene Glycol, Dimethicone, Pro-Xylane, Isohexadecane, Cyclohexasiloxane, Synthetic Wax, Glycerin, Dimethicone PEG-10/15 Crosspolymer, Aluminum Starch Octenylsuccinate, Lauryl PEG-9 Polydimethylsiloxyethyl Dimethicone, C177163, Magnesium Sulfate, Phenoxyethanol, Ethylhexyl Hydroxystearate, Acrylonitrile/Methyl Methacrylate/Vinylidene Chloride Copolymer" data-kr="물, 프로필렌 글리콜, 디메티콘, 프로자일란, 이소헥사데칸, 사이클로헥사실록산, 합성 왁스, 글리세린, 디메티콘 PEG-10/15 크로스폴리머, 알루미늄 스타치 옥테닐석시네이트, 라우릴 PEG-9 폴리디메틸실록시에틸 디메티콘, C177163, 황산마그네슘, 페녹시에탄올, 에틸헥실 하이드록시스테아레이트, 아크릴로니트릴/메틸 메타크릴레이트/비닐리덴 클로라이드 공중합체">水、丙二醇、聚二甲基硅氧烷、羟丙基四氢吡喃三醇、异十六烷、环已硅氧烷、合成蜡、甘油、聚二甲基硅氧烷PEG-10/15 交联聚合物、淀粉辛烯基琥珀酸铝、月桂基PEG-9聚二甲基硅氧乙基聚二甲基硅氧烷、C177163、硫酸镁、苯氧乙醇、羟基硬脂酸乙基己酯、丙烯腈/甲基丙烯酸甲酯/偏二氯乙烯共聚物</span></p>
+            
+            <p><strong data-zh="其他微量成分：" data-en="Other Trace Ingredients:" data-kr="기타 미량 성분:">其他微量成分：</strong><span data-zh="香精、EDTA二钠、欧洲越桔(VACCINIUM MYRTILLUS)果提取物、甘草酸二钾、透明质酸钠" data-en="Fragrance, Disodium EDTA, European Blueberry (VACCINIUM MYRTILLUS) Fruit Extract, Dipotassium Glycyrrhizate, Sodium Hyaluronate" data-kr="향료, EDTA 이나트륨, 유럽 블루베리(VACCINIUM MYRTILLUS) 과일 추출물, 감초산 이칼륨, 하이알루론산 나트륨">香精、EDTA二钠、欧洲越桔(VACCINIUM MYRTILLUS)果提取物、甘草酸二钾、透明质酸钠</span></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 使用方法 -->
+      <section class="info-section">
+        <h2 data-zh="使用方法" data-en="How to Use" data-kr="사용법">使用方法</h2>
+        <div class="usage-content">
+          <p><strong data-zh="使用方法：" data-en="How to Use：" data-kr="사용법：">使用方法：</strong><span data-zh="每晚洁面后，于精华露后将适量产品均匀涂抹于面部肌肤，轻轻按摩帮助肌肤吸收" data-en="After cleansing in the evening, apply an appropriate amount of product evenly to facial skin after essence, gently massage to help skin absorption" data-kr="매일 밤 세안 후, 에센스 사용 후 적당량의 제품을 얼굴 피부에 고르게 발라 가볍게 마사지하여 피부 흡수를 도와주세요">每晚洁面后，于精华露后将适量产品均匀涂抹于面部肌肤，轻轻按摩帮助肌肤吸收</span></p>
+          <p><strong data-zh="注意：" data-en="Note：" data-kr="주의사항：">注意：</strong><span data-zh="请避开眼周肌肤使用。" data-en="Please avoid the eye area." data-kr="눈 주변 피부는 피해서 사용하세요.">请避开眼周肌肤使用。</span></p>
+        </div>
+      </section>
+
+      <!-- 产品规格 -->
+      <section class="info-section">
+        <h2 data-zh="产品规格" data-en="Product Specifications" data-kr="제품 규격">产品规格</h2>
+        <div class="product-specs-grid">
+          <div class="spec-row">
+            <span class="spec-label" data-zh="净含量：" data-en="Net Content：" data-kr="순함량：">净含量：</span>
+            <span class="spec-value">100ml</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label" data-zh="原产地：" data-en="Country of Origin：" data-kr="원산지：">原产地：</span>
+            <span class="spec-value" data-zh="法国" data-en="France" data-kr="프랑스">法国</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label" data-zh="生产批号：" data-en="Batch Number：" data-kr="제조번호：">生产批号：</span>
+            <span class="spec-value" data-zh="见包装" data-en="See packaging" data-kr="포장 참조">见包装</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 适用人群 -->
+      <section class="info-section">
+        <h2 data-zh="适用人群" data-en="Suitable For" data-kr="적용 대상">适用人群</h2>
+        <p data-zh="所有肌肤类型，特别适合需要抗衰老的成熟肌肤。对于有细纹、松弛、干燥等肌肤问题的用户效果显著。" data-en="All skin types, especially suitable for mature skin that needs anti-aging care. Highly effective for users with fine lines, sagging, and dryness issues." data-kr="모든 피부 타입, 특히 안티에이징 케어가 필요한 성숙한 피부에 적합합니다. 주름, 처짐, 건조함 등의 피부 문제가 있는 사용자에게 매우 효과적입니다.">所有肌肤类型，特别适合需要抗衰老的成熟肌肤。对于有细纹、松弛、干燥等肌肤问题的用户效果显著。</p>
+      </section>
+    </div>
+
+  </main>
+
+  <!-- 固定产品信息栏 -->
+  <div class="fixed-product-bar" id="fixedProductBar">
+    <div class="fixed-product-info">
+      <div class="fixed-product-image">
+        <img src="../images/products/helena-rubinstein-main.jpg" alt="赫莲娜黑绷带面霜" onerror="this.src='https://images.unsplash.com/photo-1570194065650-d99fb4bedf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=60&q=80'">
+      </div>
+      <div class="fixed-product-details">
+        <h3 class="fixed-product-name" data-zh="赫莲娜黑绷带面霜" data-en="Helena Rubinstein Black Bandage Cream" data-kr="헬레나 루빈스타인 블랙 밴디지 크림">赫莲娜黑绷带面霜</h3>
+        <span class="fixed-product-spec" data-zh="- 100ml" data-en="- 100ml" data-kr="- 100ml">- 100ml</span>
+      </div>
+      <div class="fixed-product-price">
+        <span class="price" data-zh="¥3,580" data-en="¥3,580" data-kr="¥3,580">¥3,580</span>
+      </div>
+    </div>
+    <div class="fixed-product-actions">
+      <button class="btn-buy-now-fixed" onclick="buyNow()">
+        <span data-zh="立即询价" data-en="Inquire Now" data-kr="문의하기">立即询价</span>
+      </button>
+    </div>
+  </div>
+
+  <script>
+    // 语言切换功能
+    let currentLang = 'zh';
+
+    function switchLanguage(lang) {
+      currentLang = lang;
+      
+      // 更新语言按钮状态
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      document.querySelector(`[data-lang="${lang}"]`).classList.add('active');
+      
+      // 更新所有多语言元素
+      document.querySelectorAll('[data-zh]').forEach(element => {
+        const text = element.getAttribute(`data-${lang}`);
+        if (text) {
+          element.textContent = text;
+        }
+      });
+    }
+
+    // 初始化语言状态
+    function initializeLanguage() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const lang = urlParams.get('lang');
+      
+      if (lang && ['zh', 'en', 'kr'].includes(lang)) {
+        switchLanguage(lang);
+      }
+    }
+
+    // 图片切换功能
+    function changeMainImage(thumbnail) {
+      const mainImage = document.getElementById('mainProductImage');
+      mainImage.src = thumbnail.src.replace('w=200', 'w=800');
+      
+      // 更新缩略图激活状态
+      document.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('active'));
+      thumbnail.classList.add('active');
+    }
+
+
+    function buyNow() {
+      const messages = {
+        zh: '立即询价功能\n\n请联系我们的客服：\n电话：+86 19802050502\n微信：CrystalLau7\n邮箱：liumengting711@gmail.com',
+        en: 'Inquiry Function\n\nPlease contact our customer service:\nPhone: +86 19802050502\nWeChat: CrystalLau7\nEmail: liumengting711@gmail.com',
+        kr: '문의 기능\n\n고객 서비스에 문의하세요:\n전화: +86 19802050502\n위챗: CrystalLau7\n이메일: liumengting711@gmail.com'
+      };
+      alert(messages[currentLang]);
+    }
+
+    // 检查图片加载状态
+    function checkImageLoading() {
+      const mainImage = document.getElementById('mainProductImage');
+      if (mainImage) {
+        mainImage.onload = function() {
+          console.log('主图片加载成功:', this.src);
+        };
+        mainImage.onerror = function() {
+          console.log('主图片加载失败，路径:', this.src);
+        };
+      }
+    }
+
+    // 节流函数
+    function throttle(func, wait) {
+      let timeout;
+      return function executedFunction(...args) {
+        const later = () => {
+          clearTimeout(timeout);
+          func(...args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+      };
+    }
+
+    // 滚动监听功能
+    function handleScroll() {
+      const fixedBar = document.getElementById('fixedProductBar');
+      if (!fixedBar) return;
+      
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      
+      // 当滚动超过200px时显示固定产品信息栏，类似Chanel官网
+      if (scrollTop > 200) {
+        if (!fixedBar.classList.contains('show')) {
+          fixedBar.classList.add('show');
+        }
+      } else {
+        if (fixedBar.classList.contains('show')) {
+          fixedBar.classList.remove('show');
+        }
+      }
+    }
+
+    // 平滑滚动到指定元素
+    function smoothScrollToElement(elementId) {
+      const element = document.getElementById(elementId);
+      if (element) {
+        element.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    }
+
+    // 智能返回首页
+    function returnToBrands(event) {
+      event.preventDefault();
+      
+      // 获取来源参数和当前语言
+      const urlParams = new URLSearchParams(window.location.search);
+      const fromSection = urlParams.get('from') || 'brands';
+      
+      // 跳转到首页，保持来源信息和语言状态
+      window.location.href = `../index.html?from=${fromSection}&lang=${currentLang}`;
+    }
+
+    // 页面加载完成后初始化
+    document.addEventListener('DOMContentLoaded', function() {
+      // 初始化语言状态
+      initializeLanguage();
+      
+      // 检查图片加载
+      checkImageLoading();
+      
+      // 绑定语言切换按钮事件
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+          switchLanguage(this.getAttribute('data-lang'));
+        });
+      });
+      
+      // 绑定滚动事件（使用节流优化性能）
+      window.addEventListener('scroll', throttle(handleScroll, 10));
+    });
+  </script>
+</body>
+</html>
